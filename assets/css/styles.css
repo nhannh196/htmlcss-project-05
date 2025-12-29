@@ -17,6 +17,8 @@ button,
 textarea {
     font-size: inherit;
     font-family: inherit;
+    border: none;
+    outline: none;
 }
 
 a {
@@ -24,8 +26,37 @@ a {
 }
 
 /* Common */
+.desc {
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6667;
+}
+.heading-1 {
+    color: #212832;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1667; /* 116.667% */
+}
+.section-title {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+.section-title::before {
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
 .container {
-    width: 1440px;
+    width: 1170px;
     max-width: calc(100% - 52px);
     margin: 0 auto;
 }
@@ -52,6 +83,8 @@ header {
     position: sticky;
     top: -21px;
     padding: 42px 0 21px;
+    background-color: #fff;
+    z-index: 99;
 }
 
 .header__inner {
@@ -108,4 +141,171 @@ header {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.75;
+}
+
+/* ---------------------------------- Hero ---------------------------------- */
+.hero {
+    padding: 55px 0;
+}
+
+.hero__inner {
+    display: grid;
+    grid-template-columns: 540px 1fr;
+    column-gap: 60px;
+    align-items: center;
+}
+
+.hero__heading {
+    width: 93%;
+    margin-top: 12px;
+}
+
+.hero__heading b {
+    color: #7264d6;
+}
+
+.hero__desc {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hero-form {
+    margin-top: 40px;
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 16px 42px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hero-form__input {
+    flex: 1;
+    height: 74px;
+    padding: 23px 23px 23px 15px;
+}
+
+.hero-form__input::placeholder {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.hero-form__submit {
+    background-color: #7264d6;
+    cursor: pointer;
+}
+
+.hero__note {
+    display: inline-block;
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.71429; /* 171.429% */
+}
+
+.hero__right {
+    position: relative;
+    /* height: 562px; */
+}
+
+.hero__img {
+    display: block;
+    margin-left: 100px;
+    width: 296px;
+    height: 562px;
+    object-fit: cover;
+}
+
+.hero-deposite {
+    position: absolute;
+    top: 113px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hero-deposite__text {
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-deposite__money {
+    margin-left: 19px;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero-interest {
+    position: absolute;
+    top: 127px;
+    right: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #da6464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-interest__number {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-interest__text {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.hero-secured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 60px;
+    right: 91px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.hero-secured-column{
+    display: flex;
+   column-gap: 5px;
+    flex-direction: column;
+}
+
+.hero-secured__money {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.hero-secured__text {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
 }

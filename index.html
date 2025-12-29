@@ -98,7 +98,7 @@
         <!-- Styles css -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body style="height: 10000px">
+    <body>
         <!-- Header navbar -->
         <header class="header">
             <div class="container">
@@ -110,18 +110,114 @@
 
                     <!-- Nav -->
                     <nav class="header-navbar">
-                            <a href="#!" class="header-navbar__item">Home</a>
-                            <a href="#!" class="header-navbar__item">Products</a>
-                            <a href="#!" class="header-navbar__item">Features</a>
-                            <a href="#!" class="header-navbar__item">Blog</a>
+                        <a href="#!" class="header-navbar__item">Home</a>
+                        <a href="#!" class="header-navbar__item">Products</a>
+                        <a href="#!" class="header-navbar__item">Features</a>
+                        <a href="#!" class="header-navbar__item">Blog</a>
                     </nav>
                     <!-- Action -->
                     <div class="header-action">
                         <a href="#!" class="header-action__login">Log in</a>
-                        <a href="#!" class="btn header-action__signup">Sign up</a>
+                        <a href="#!" class="btn header-action__signup"
+                            >Sign up</a
+                        >
                     </div>
                 </div>
             </div>
         </header>
+
+        <main style="height: 10000px">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <!-- Column left -->
+                        <div class="hero__left">
+                            <span class="hero__title section-title"
+                                >Digital Smart Wallet</span
+                            >
+                            <h1 class="hero__heading heading-1">
+                                Digital <b>Payment</b> For Everyone.
+                            </h1>
+                            <p class="hero__desc desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <form
+                                action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                                method="post"
+                                class="hero-form"
+                            >
+                                <input
+                                    type="text"
+                                    class="hero-form__input"
+                                    placeholder="Your email address"
+                                />
+                                <button
+                                    class="btn hero-form__submit"
+                                    type="submit"
+                                >
+                                    Get Started
+                                </button>
+                            </form>
+                            <b class="hero__note"
+                                >*We’ll respect the inbox and never share your
+                                email.</b
+                            >
+                        </div>
+
+                        <!-- Column right -->
+                        <div class="hero__right">
+                            
+                                <img
+                                    src="./assets/img/hero-mobile.png"
+                                    alt="Digital Payment For Everyone."
+                                    class="hero__img"
+                                />
+                                <!-- Deposite -->
+                                <a href="#!" class="hero-deposite">
+                                    <img
+                                        src="./assets/icon/hero-download.svg"
+                                        alt="Deposite"
+                                        class="hero-deposite__img"
+                                    />
+                                    <span class="hero-deposite__text"
+                                        >Deposite</span
+                                    >
+                                    <span class="hero-deposite__money"
+                                        >$32000</span
+                                    >
+                                </a>
+                                <!-- Interest -->
+                                <div class="hero-interest">
+                                    <span class="hero-interest__number"
+                                        >0%</span
+                                    >
+                                    <span class="hero-interest__text"
+                                        >Interest</span
+                                    >
+                                </div>
+                                <div class="hero-secured">
+                                    <img
+                                        src="./assets/icon/hero-shield.svg"
+                                        alt="shield"
+                                        class="hero-secured__img"
+                                    />
+                                   <div class="hero-secured-column">
+                                        <span class="hero-secured__money"
+                                            >$1.310</span
+                                        >
+                                        <span class="hero-secured__text"
+                                            >SECURED FUNDS</span
+                                        >
+                                   </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
