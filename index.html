@@ -91,7 +91,7 @@
 
         <!-- Font -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
         />
 
@@ -104,7 +104,7 @@
             <div class="container">
                 <div class="header__inner">
                     <!-- Logo -->
-                    <a href="#!" class="web-logo">
+                    <a href="" class="web-logo">
                         <img src="./assets/img/logo.svg" alt="" class="logo" />
                     </a>
 
@@ -150,7 +150,8 @@
                                 class="hero-form"
                             >
                                 <input
-                                    type="text"
+                                    type="email"
+                                    name="email"
                                     class="hero-form__input"
                                     placeholder="Your email address"
                                 />
@@ -169,52 +170,145 @@
 
                         <!-- Column right -->
                         <div class="hero__right">
-                            
+                            <img
+                                src="./assets/img/hero-mobile.png"
+                                alt="Digital Payment For Everyone."
+                                class="hero__img"
+                            />
+                            <!-- Deposite -->
+                            <a href="#!" class="hero-deposite">
                                 <img
-                                    src="./assets/img/hero-mobile.png"
-                                    alt="Digital Payment For Everyone."
-                                    class="hero__img"
+                                    src="./assets/icon/hero-download.svg"
+                                    alt="Deposite"
+                                    class="hero-deposite__img"
                                 />
-                                <!-- Deposite -->
-                                <a href="#!" class="hero-deposite">
-                                    <img
-                                        src="./assets/icon/hero-download.svg"
-                                        alt="Deposite"
-                                        class="hero-deposite__img"
-                                    />
-                                    <span class="hero-deposite__text"
-                                        >Deposite</span
+                                <span class="hero-deposite__text"
+                                    >Deposite</span
+                                >
+                                <span class="hero-deposite__money">$32000</span>
+                            </a>
+                            <!-- Interest -->
+                            <div class="hero-interest">
+                                <span class="hero-interest__number">0%</span>
+                                <span class="hero-interest__text"
+                                    >Interest</span
+                                >
+                            </div>
+                            <div class="hero-secured">
+                                <img
+                                    src="./assets/icon/hero-shield.svg"
+                                    alt="shield"
+                                    class="hero-secured__img"
+                                />
+                                <div class="hero-secured-column">
+                                    <span class="hero-secured__money"
+                                        >$1.310</span
                                     >
-                                    <span class="hero-deposite__money"
-                                        >$32000</span
-                                    >
-                                </a>
-                                <!-- Interest -->
-                                <div class="hero-interest">
-                                    <span class="hero-interest__number"
-                                        >0%</span
-                                    >
-                                    <span class="hero-interest__text"
-                                        >Interest</span
+                                    <span class="hero-secured__text"
+                                        >SECURED FUNDS</span
                                     >
                                 </div>
-                                <div class="hero-secured">
-                                    <img
-                                        src="./assets/icon/hero-shield.svg"
-                                        alt="shield"
-                                        class="hero-secured__img"
-                                    />
-                                   <div class="hero-secured-column">
-                                        <span class="hero-secured__money"
-                                            >$1.310</span
-                                        >
-                                        <span class="hero-secured__text"
-                                            >SECURED FUNDS</span
-                                        >
-                                   </div>
-                                </div>
-                            
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How it works -->
+            <section class="hoitwo">
+                <div class="container">
+                    <div class="hoitwo__inner">
+                        <div class="hoitwo__left">
+                            <figure class="hoitwo-media">
+                                <img
+                                    src="./assets/img/hoitwo-img.png"
+                                    alt="How It Works"
+                                    class="hoitwo-media__img"
+                                />
+                                <div class="hoitwo-congratulations">
+                                    <div class="hoitwo-congratulations__img">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="11"
+                                            height="8"
+                                            viewBox="0 0 11 8"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M0.5 3.5L4 7L10.5 0.5"
+                                                stroke="#4AB5E3"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+
+                                    <div class="hoitwo-congratulations-column">
+                                        <div
+                                            class="hoitwo-congratulations__title"
+                                        >
+                                            Congratulations
+                                        </div>
+                                        <div
+                                            class="hoitwo-congratulations__desc"
+                                        >
+                                            Your account activated
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hoitwo-media-decorate">
+                                    <img
+                                        src="./assets/icon/logo-icon.svg"
+                                        alt=""
+                                        class="hoitwo-media-decorate__img"
+                                    />
+                                </div>
+                            </figure>
+                        </div>
+                        <section class="hoitwo__right">
+                            <div class="hoitwo__title section-title">
+                                Digital Smart Wallet
+                            </div>
+                            <h2 class="heading-2 hoitwo__heading">
+                                How It Works
+                            </h2>
+                            <div class="hoitwo-list">
+                                <!-- Item 1 -->
+                                <div class="hoitwo-item">
+                                    <h3 class="hoitwo-item__heading">
+                                        1. Open a High Interest Checking account
+                                    </h3>
+                                    <p class="hoitwo-item__desc">
+                                        Fund your bank account with a minimum
+                                        balance of $100. Enroll in 3 minutes or
+                                        less!
+                                    </p>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="hoitwo-item">
+                                    <h3 class="hoitwo-item__heading">
+                                        2. 10 point-of-sale transactions each
+                                        Month that are at least $10 each.
+                                    </h3>
+                                    <p class="hoitwo-item__desc">
+                                        Be sure to use your rewards checking
+                                        account as often as possible in order to
+                                        accue APYI
+                                    </p>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="hoitwo-item">
+                                    <h3 class="hoitwo-item__heading">
+                                        3. Receive up to 5.50% APY
+                                    </h3>
+                                    <p class="hoitwo-item__desc">
+                                        The APY you earn will be based on your
+                                        account balance and satisfying the
+                                        transaction requirement.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </section>

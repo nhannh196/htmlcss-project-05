@@ -39,6 +39,12 @@ a {
     font-weight: 700;
     line-height: 1.1667; /* 116.667% */
 }
+.heading-2 {
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25; /* 125% */
+}
 .section-title {
     display: flex;
     align-items: center;
@@ -181,8 +187,8 @@ header {
 
 .hero-form__input {
     flex: 1;
-    height: 74px;
-    padding: 23px 23px 23px 15px;
+    /* height: 74px; */
+    padding: 15px 23px 15px 15px;
 }
 
 .hero-form__input::placeholder {
@@ -291,9 +297,9 @@ header {
     background: #439f90;
 }
 
-.hero-secured-column{
+.hero-secured-column {
     display: flex;
-   column-gap: 5px;
+    column-gap: 5px;
     flex-direction: column;
 }
 
@@ -308,4 +314,163 @@ header {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1; /* 100% */
+}
+
+/* ---------------------------------- How it works ---------------------------------- */
+.hoitwo {
+    margin-top: 45px;
+    padding: 130px 0 60px;
+}
+
+.hoitwo__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 130px;
+}
+
+.hoitwo__left {
+    flex-shrink: 0;
+    width: 570px;
+}
+
+.hoitwo-media {
+    display: block;
+    position: relative;
+    width: 470px;
+    height: 550px;
+    background: url(../img/hoitwo-bg-img.svg);
+    background-repeat: no-repeat;
+}
+.hoitwo-media__img {
+    /* display: block; */
+    position: absolute;
+    left: 7px;
+    bottom: 5px;
+    width: calc(100% - 14px);
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+.hoitwo-congratulations {
+    position: absolute;
+    left: 344px;
+    bottom: 96px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    width: 226px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0 14px 34px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hoitwo-congratulations__img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: #4ab5e3;
+}
+
+.hoitwo-congratulations__img svg {
+    position: relative;
+    z-index: 1;
+}
+
+.hoitwo-congratulations__img::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.hoitwo-congratulations-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.hoitwo-congratulations__title {
+    color: #212832;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.hoitwo-congratulations__desc {
+    color: #696d76;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.hoitwo-media-decorate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 344px;
+    top: 7px;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background: #7264d6;
+}
+
+.hoitwo-media-decorate::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #f8fbfe;
+}
+
+.hoitwo-media-decorate__img {
+    position: relative;
+    z-index: 1;
+}
+
+.hoitwo__right {
+    margin-top: -69px;
+}
+
+.hoitwo__heading {
+    margin-top: 12px;
+}
+
+.hoitwo-list {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.hoitwo-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.hoitwo-item__heading {
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45456; /* 145.455% */
+}
+
+.hoitwo-item__desc {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
 }
