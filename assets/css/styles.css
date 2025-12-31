@@ -978,3 +978,105 @@ header {
     bottom: 49px;
     right: 166px;
 }
+
+/* ---------------------------------- Footer ---------------------------------- */
+.footer {
+    margin-top: 100px;
+    background-color: #FAFBFF;
+}
+
+.footer::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "© 2020 Ligft Media All rights reserved.";
+    padding: 28px 0;
+    background-color: #7264d6;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.footer__inner {
+    padding: 100px 0 28px;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 34%;
+    column-gap: 163px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.footer-item__title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.667; /* 166.667% */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.footer-contact__tel,
+.footer-contact__email,
+.footer-link,
+.footer-item__address {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.667; /* 166.667% */
+}
+
+.footer-contact__tel:hover,
+.footer-contact__email:hover,
+.footer-link:hover {
+    color: #7264d6;
+}
+
+.footer-form {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.footer-form__label {
+    display: block;
+    color: #0a142f;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.667; /* 166.667% */
+}
+
+.input-row {
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer-form__input {
+    flex-grow: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+}
+
+.footer__btn {
+    border-radius: 6px;
+    background: #7264d6;
+}
+
+.footer-contact {
+    margin-top: 54px;
+    display: flex;
+    column-gap: 100px;
+}
