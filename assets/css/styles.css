@@ -330,8 +330,10 @@ header {
 }
 
 .hoitwo__left {
+    /* display: block; */
     flex-shrink: 0;
     width: 570px;
+    /* animation: slideInLeft 2s; */
 }
 
 .hoitwo-media {
@@ -769,11 +771,11 @@ header {
     object-fit: cover;
 }
 
-.testimonial-item:first-child .testimonial-item__user {
+.testimonial-item:nth-child(odd) .testimonial-item__user {
     background-color: #4ab5e3;
 }
 
-.testimonial-item:last-child .testimonial-item__user {
+.testimonial-item:nth-child(even) .testimonial-item__user {
     background-color: #439f90;
 }
 
@@ -959,6 +961,8 @@ header {
 
 .app-decorate__star {
     position: absolute;
+    animation: zoomIn 2s infinite;
+    animation-direction: alternate;
 }
 
 .app-decorate__star:nth-last-of-type(1) {
@@ -969,6 +973,7 @@ header {
 .app-decorate__star:nth-last-of-type(2) {
     top: 49px;
     right: 112px;
+   
 }
 .app-decorate__star:nth-last-of-type(3) {
     bottom: 49px;
